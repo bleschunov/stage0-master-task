@@ -8,7 +8,7 @@ public class DigitsSumCalculator {
 
         int res = 0;
 
-        for (int i = 0; i < 4; i++) {
+        while (number != 0) {
             int temp = number % 10;
             res += temp;
             number = (number - temp) / 10;
@@ -18,7 +18,7 @@ public class DigitsSumCalculator {
     }
 
     public static void main(String[] args) {
-        new DigitsSumCalculator().calculateSum(-1111);
+        new DigitsSumCalculator().calculateSum(-5);
     }
 
 }
