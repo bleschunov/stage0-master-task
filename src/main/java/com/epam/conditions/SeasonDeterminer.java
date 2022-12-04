@@ -9,22 +9,22 @@ public class SeasonDeterminer {
             return;
         }
 
-        if (monthNumber < 4) {
+        if (monthNumber == 12 || monthNumber < 3) {
             System.out.println("Winter");
             return;
         }
 
-        if (monthNumber < 7) {
+        if (monthNumber < 6) {
             System.out.println("Spring");
             return;
         }
 
-        if (monthNumber < 10) {
+        if (monthNumber < 9) {
             System.out.println("Summer");
             return;
         }
 
-        System.out.println("Fall");
+        System.out.println("Autumn");
     }
 
     public static void main(String[] args) {

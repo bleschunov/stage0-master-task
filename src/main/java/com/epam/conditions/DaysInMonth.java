@@ -5,12 +5,17 @@ public class DaysInMonth {
     public void printDays(int year, int month) {
         if (year < 0 || month < 1 || month > 12) {
             System.out.println("invalid date");
+            return;
         }
 
-        if (month % 2 == 0) {
+        if (month % 2 == 0 && month != 2) {
             System.out.println(30);
-        } else {
+            return;
+        }
+
+        if (month % 2 == 1) {
             System.out.println(31);
+            return;
         }
 
         boolean leap =
