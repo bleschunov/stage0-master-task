@@ -20,4 +20,17 @@ public class Animal {
                 numberOfPaws == 1 ? "paw" : "paws",
                 hasFur ? "a" : "no");
     }
+
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        Bird bird = new Bird();
+
+        // Calls getDescription method of Animal
+        System.out.println(dog.getDescription());
+
+        // Calls getDescription method of Bird,
+        // where calls super method
+        // which is Animal's method
+        System.out.println(bird.getDescription());
+    }
 }
